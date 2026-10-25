@@ -51,5 +51,3 @@ Android (Java, XML, SQLite, Volley) · Python · Flask · scikit-learn · pandas
 - The scaling in the model was re-fitted on training data only so it can be served by the API (`backend/train_model.py`).
 - Android app, SQLite history and API integration: **<YOUR NAME>**
 
-## Author
-<YOUR NAME> – <YOUR COURSE, COLLEGE>
