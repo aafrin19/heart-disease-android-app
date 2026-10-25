@@ -1,0 +1,9 @@
+Open app/build.gradle (Module: app) and add this line inside dependencies { ... }:
+
+    implementation 'com.android.volley:volley:1.2.2'
+
+If your file is build.gradle.kts, use:
+
+    implementation("com.android.volley:volley:1.2.2")
+
+Then click "Sync Now" at the top.

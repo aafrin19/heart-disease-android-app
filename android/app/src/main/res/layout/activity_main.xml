@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Heart Disease Predictor"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="#C62828"
+            android:gravity="center"
+            android:paddingBottom="16dp" />
+
+        <EditText android:id="@+id/etName"
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:hint="Patient name" android:inputType="textPersonName" />
+
+        <EditText android:id="@+id/etAge"
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:hint="Age (years)" android:inputType="number" />
+
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:text="Sex" android:paddingTop="12dp" />
+        <Spinner android:id="@+id/spSex"
+            android:layout_width="match_parent" android:layout_height="48dp" />
+
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:text="Chest pain type" android:paddingTop="8dp" />
+        <Spinner android:id="@+id/spCp"
+            android:layout_width="match_parent" android:layout_height="48dp" />
+
+        <EditText android:id="@+id/etBp"
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:hint="Resting blood pressure (mm Hg)" android:inputType="number" />
+
+        <EditText android:id="@+id/etChol"
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:hint="Cholesterol (mg/dl)" android:inputType="number" />
+
+        <CheckBox android:id="@+id/cbFbs"
+            android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:text="Fasting blood sugar above 120 mg/dl" />
+
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:text="Resting ECG result" android:paddingTop="8dp" />
+        <Spinner android:id="@+id/spEcg"
+            android:layout_width="match_parent" android:layout_height="48dp" />
+
+        <EditText android:id="@+id/etHr"
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:hint="Maximum heart rate achieved" android:inputType="number" />
+
+        <CheckBox android:id="@+id/cbAngina"
+            android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:text="Chest pain during exercise (exercise angina)" />
+
+        <EditText android:id="@+id/etOldpeak"
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:hint="Oldpeak / ST depression (e.g. 1.5)"
+            android:inputType="numberDecimal" />
+
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:text="ST slope" android:paddingTop="8dp" />
+        <Spinner android:id="@+id/spSlope"
+            android:layout_width="match_parent" android:layout_height="48dp" />
+
+        <Button android:id="@+id/btnPredict"
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:text="Predict" android:layout_marginTop="16dp" />
+
+        <TextView android:id="@+id/tvResult"
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:textSize="20sp" android:textStyle="bold"
+            android:gravity="center" android:paddingTop="16dp" />
+
+        <Button android:id="@+id/btnHistory"
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:text="View History" android:layout_marginTop="8dp" />
+    </LinearLayout>
+</ScrollView>
